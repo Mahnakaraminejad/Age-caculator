@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: hsl(0, 0%, 86%);">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="index.css" type="text/css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <script src="index.js"></script>
+  <!-- <a href="http://Pharmacyweb"> link site</a> -->
+
+  <!-- <script>
+   
+
+    function ageCalculator(day, month, year) {
+      const newYears = new Date(year) - year
+      // const today = new Date(year,month,day);
+
+
+    }
+    const newYears = new Date(year) ;
+
+    console.log(newYears)
+    // const today = new Date(year, month, day);
+    // const bo = getFullYear(2001)
+    // console.log(bo)
+
+  </script> -->
+
+  <div class="container">
+
+    <div class="topContainer">
+      <span>
+        <label style="color: gray;">Day</label>
+        <input id="days" class="date" type="text" placeholder="DD" />
+      </span>
+      <span>
+        <label style="color: gray;">Month</label>
+        <input id="months" class="date" type="text" placeholder="MM" />
+      </span>
+      <span>
+        <label style="color: gray;">Year</label>
+        <input id="years" class="date" type="text" placeholder="YYYY" />
+      </span>
+    </div>
+
+    <div class="liner">
+      <span>
+        <hr size="0" width="550px" style="margin-top: 25px; height: 0px;" />
+      </span>
+      <button class="dot" onclick="AgeCalculator()">
+        <img alt="img" style="height: 25px; width: 25px;" src="./assets/images/icon-arrow.svg" />
+      </button>
+    </div>
+
+    <div class="bottomContainer">
+      <span id="dashY" class="dash">- - </span><span> years</span><br />
+      <span id="dashM" class="dash">- - </span><span> months</span><br />
+      <span id="dashD" class="dash">- - </span><span> days</span>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
